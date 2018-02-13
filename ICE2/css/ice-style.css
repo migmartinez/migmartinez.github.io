@@ -65,6 +65,7 @@ aside {
 	height: 270px;
 	width: 272px;
 	position: relative;
+	z-index: 1;
 }
 aside li {
 	font-size: 20px;
