@@ -1,0 +1,13 @@
+h1 {
+	color: blue;
+}
+
+p {
+	text-align: center;
+}
+
+.progress {
+	height: 1.25em;
+	width: 100%;
+}
+
