@@ -37,7 +37,8 @@ nav a {
 	padding: 10px 0 10px 0;
 	background-color: #545549;
 	color: black;
-	position: sticky;
+	position: relative;
+	z-index: -1;
 }
 #content ul {
 	text-align: center;
@@ -64,7 +65,6 @@ aside {
 	padding: 10px 0 10px 0;
 	height: 270px;
 	width: 272px;
-	position: relative;
 	z-index: 1;
 }
 aside li {
