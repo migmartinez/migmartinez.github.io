@@ -17,69 +17,55 @@ nav {
 	background-color: green;
 	text-align: center;
 	display: block;
+	position: relative;
+	z-index: 1;
 }
 
-nav li{
+nav ul li{
 	list-style-type: none;
 	display: inline-block;
 	background-color: black;
-	font-size: 30px;
 	padding: 20px;
-	width: 100px;
+	align-items: center;
 }
 
-nav a {
+nav ul a {
 	color: white;
-	text-decoration: none;
+	text-decoration: solid;
 }
 
 #content {
 	padding: 10px 0 10px 0;
 	background-color: #545549;
 	color: black;
-	position: relative;
-	z-index: -1;
 }
 #content ul {
 	text-align: center;
 	list-style-type: none;
-	font-size: 18px;
 }
-
-#content ul li {
-	text-align: justify;
-	font-size: 18px;
-	overflow-wrap: break-word;
-
-}
-#content p {
-	text-align: center;
-	font-size: 18px;
-}
-
 
 aside {
 	float: right;
-	display: block;
 	background-color: white;
 	padding: 10px 0 10px 0;
-	height: 270px;
-	width: 272px;
-	z-index: 1;
+	positon: relative;
+	z-index: -1;
 }
 aside li {
 	font-size: 20px;
 	align-content: center;
 }
 aside img {
-	padding: 10px 0 10px 0;
-	height: inherit;
-	width: inherit;
+	padding: 30px;
+	height: 15vh;
+	width: auto;
 }
 
 footer {
 	background-color: #0e7e12;
 	padding: 10px 0 10px 0;
 	font-size: 20px;
+	position: relative;
+	z-index: 1;
 }
 
