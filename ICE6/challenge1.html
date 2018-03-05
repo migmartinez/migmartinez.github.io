@@ -13,13 +13,28 @@ When you test your form at the moment, you'll notice that you can click on the c
   <head>
     <title>JavaScript Challenges</title>
     <style>
-    /*    YOUR CODE HERE - check Step 1*/ 
+     #emailfield {
+      display: none;
+     }
     </style>
     
     <script type="text/javascript">
 	function toggleEmail(){
-		/*    YOUR CODE HERE - check Step 1*/ 
-	} 
+    //window.alert("Yep, my function is being called"); 
+    //console.log('Yep, my function is being called');
+    //Above are the same ^^
+
+    //var emailField = document.getElementById('emailfield');
+    var emailField = document.querySelector('#emailfield');
+    var subscribe = document.querySelector('#subscribe');
+
+    if (subscribe.checked) {
+      emailField.style.display = 'block';
+    } else {
+      emailField.style.display = 'none';
+    }
+    console.log(emailField);
+    	} 
     </script>
   </head>
   <body>
