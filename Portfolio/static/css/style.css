@@ -1,0 +1,124 @@
+ul li {
+	list-style-type: none;
+}
+
+a:hover {
+	color: white;
+}
+
+#htmlbutton {
+	display: block;
+	background-color: blue;
+	text-decoration-color: white;
+	text-align: center;
+	font-size: 20px;
+	border-color: white;
+	text-decoration: none;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#cssbutton {
+	display: block;
+	background-color: purple;
+	text-decoration-color: skyblue;
+	text-align: center;
+	font-size: 20px;
+	border-color: white;
+	text-decoration: none;
+	text-orientation: sideways;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#jsbutton {
+	display: block;
+	background-color: orange;
+	text-decoration-color: black;
+	text-align: center;
+	font-size: 20px;
+	border-color: white;
+	text-decoration: none;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#pybutton {
+	display: block;
+	background-color: yellow;
+	text-decoration-color: darkblue;
+	text-align: center;
+	font-size: 20px;
+	border-color: white;
+	text-decoration: none;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#jquerybutton {
+	display: block;
+	background-color: red;
+	text-decoration-color: black;
+	text-align: center;
+	font-size: 20px;
+	border-color: white;
+	text-decoration: none;
+	height: 50px;
+	padding-top: 20px;
+}
+
+.nav-top ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #211D24; /*CHANGE*/
+	margin: 0;
+	display: none;
+}
+.nav-top ul li, .menu-icon{
+	border-top: 1px solid #DDDDDA; /*CHANGE*/
+}
+.nav-top ul li a{
+	font-size: 1em;
+	color: #DDDDDA; /*CHANGE*/
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.menu-icon a{
+	font-size: 1em;
+	color: #DDDDDA; /*CHANGE*/
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.nav-top ul li a.current-page{
+	color: #F54320;
+	font-weight: bold;
+}
+.nav-top ul li a.current-page:before {
+/*  COLLEEN - REMOVED SOMETHING HERE
+*/
+  color: #F54320;
+  padding-right: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.nav-top ul li a:hover, .menu-icon a:hover, .nav-top ul li a:focus, .menu-icon a:focus{
+    background-color: #E3AD02;
+    color: #DDDDDA;
+    font-weight: bold;
+}
+.nav-top ul li a:hover:before, .nav-top ul li a:focus:before{
+/*  COLLEEN - REMOVED SOMETHING HERE
+*/  color: #DDDDDA;
+  	padding-right: 4px;
+  	position: relative;
+  	top: 1px;
+}
+/*implement menu toogle*/
+.nav-top.toggle-open ul{
+	display: block;
+}

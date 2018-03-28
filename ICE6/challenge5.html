@@ -36,10 +36,7 @@
 	}
 	</style>
 
-	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
-	</script>
+	
 </head>
 
 <body>
@@ -49,7 +46,7 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
+		<img id="img1" class = "preview" 
 			alt = "Styling with a Bandana" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
 			>
@@ -63,6 +60,28 @@
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+			alt = "Young Puppy">
+
+	<script type="text/javascript">
+	// I used Two functions here.  Starter idea at: 
+	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	var mainImage = document.getElementById("image");
+	var sourceImages = document.getElementsByTagName("img");
+
+	//next, we will add an event listener of each source image to change the main image:
+
+	for (var i =0; i < sourceImages.length; i++ ) {
+		var elem = sourceImages[i];
+		elem.onmouseenter= function() {
+			console.log("mouse entered");
+			// step 1 get alt text from elem 
+			// step 2 set alt in the mainImage
+		}
+		elem.onmouseleave= function() {
+			console.log("mouse left");
+			//step 1 set the alt in the mainImage to default value
+		}
+	}
+	</script>
 </body>
 </html>

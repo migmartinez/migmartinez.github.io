@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://collemc.people.si.umich.edu/ICE8/formJobHunt.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<title>Employment Application Form</title>
+	</head>
+
+	<body style="">
+		<h2 id="title"> Your Dream Job Starts Here... </h2>
+		<form name="application" action="http://collemc.people.si.umich.edu/ICE8/formJobHunt.html" method="post" _lpchecked="1">
+
+
+      <h4 id="binfo"><u>Basic Information</u></h4>
+   <div>
+	
+
+      	<!-- Content -->
+        <fieldset id="acctinfo">
+			<legend id="acctlegend">Account Information:</legend>
+			<label id="fname"> First name:<input type="text" name="fname" autofocus="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+			</label><br>
+
+		  	<label id="lname" for="lname"> Last name:</label><input type="text" name="lname"><br>
+
+		  	<label id="emfield"> Email: <input type="email" name="email" placeholder="iyad@umich.edu"></label><br>
+
+		  	<label id="pass"> Password: <input type="password" name="password1" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></label><br>
+
+		  	<label id="confirm"> Confirm Password: *<input type="password" name="password2" onchange="validatePass(this)" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></label><br>
+		</fieldset><br>
+
+		<fieldset id="continfo">
+			<legend id="contlegend">Contact Information:</legend>
+			<label id="phone">Phone number: <input type="text"></label>
+
+		<label id="citizen">Country of Citizenship: <select id="country" class="bfh-countries" data-country="US"><option value=""></option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="CI">Côte d'Ivoire</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="TP">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FO">Faeroe Islands</option><option value="FK">Falkland Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="MK">Former Yugoslav Republic of Macedonia</option><option value="FR">France</option><option value="FX">France, Metropolitan</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard and Mc Donald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="KP">North Korea</option><option value="MP">Northern Marianas</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestine</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="ST">São Tomé and Príncipe</option><option value="SH">Saint Helena</option><option value="PM">St. Pierre and Miquelon</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen Islands</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="BS">The Bahamas</option><option value="GM">The Gambia</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="VI">US Virgin Islands</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican City</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WF">Wallis and Futuna Islands</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select><br></label><br>
+
+		<label id="addr"> Address: <input type="text" id="address" name="address" size="50" placeholder="1234 N Wells St"></label><br>
+		<label id="city"> City: <input type="text" name="city" placeholder="Ann Arbor"></label>
+		<label id="state"> State: <input type="text" name="state" placeholder="MI"></label>
+		<label id="zip"> Zip code: <input type="text" name="Zip code" placeholder="48108"></label><br>  
+		</fieldset><br>
+      </div>
+    
+
+	<div>
+
+      <h4 id="eduworkxp"><u>Education and Work Experience</u></h4>
+        <fieldset id="eduinfo"> 
+		  <legend id="edulegend">Educational Information:</legend>
+		  
+		  <div id="education">
+		  <label id="degree"> Degree:
+		  <select name="degree">
+				<option value="High school">High school</option>
+				<option value="BS">B.S</option>
+				<option value="BA">B.A</option>
+				<option value="Meng">M.Eng</option>
+				<option value="MA">M.A</option>
+				<option value="MS">M.S</option>
+				<option value="PhD">PhD</option>
+		  </select></label><br>
+
+		  <label id="instname"> Institution name: <input type="text" name="inst_name" placeholder="University of Michigan"></label><br>
+
+		  <label id="major"> Major: <input type="text" name="Major" placeholder="Information System"></label><br>
+
+		  <label id="gpa"> GPA: <input type="number" step="any" name="GPA" min="0" max="4"></label> /4.0<br>
+
+		
+
+		<button id="addDegree"> Add degree </button>
+</div>
+		</fieldset> 
+
+			<fieldset id="workinfo">
+			<legend id="worklegend">Work Experience:</legend>
+			<div id="work">
+				<label id="cname">Company Name: <input type="text" name="name" placeholder="Google"></label><br>
+				<label id="jobtitle">Job Title: <input type="text" name="title" placeholder="Software Engineer"></label><br>
+				<label id="startdate">Join Date: <input type="date" name="joindate"></label><br>
+				<label id="enddate">End Date: <input type="date" name="enddate"></label><br>
+
+			</div>
+				<!-- Can automatically populate the duration using Javascript -->
+				<button id="addWork">Add Employer</button>
+			</fieldset>
+			<br>
+
+      </div>
+    
+      <div>
+      <h4 id="position"><u>Position</u></h4>
+   
+
+    
+        <fieldset id="typeinfo">
+			<legend id="typelegend">Type of Work:</legend>
+			What are you interested in applying for?<br>
+				<label><input type="checkbox" name="position" value="internship"> Internship</label><br>
+				<label><input type="checkbox" name="position" value="full-time"> Full-time</label><br>
+				<label><input type="checkbox" name="position" value="part-time"> Part-time</label><br>
+			</fieldset>
+			<!-- Resume ( ) and cover letter (optional) -->
+
+			<fieldset id="resumeinfo">
+			<legend id="resumelegend">Resume and Cover Letter:</legend>
+			<label id="uploadresume">Upload Resume: *<input type="file" name="resume" accept="application/pdf"></label><br>
+			<label id="uploadcletter">Upload Cover Letter: <input type="file" name="coverletter" accept="application/pdf"></label><br>
+			</fieldset>
+
+			<fieldset id="positioninfo">
+			<legend id="positionlegend">Position:</legend>
+			Which position are you interested in applying for?
+			<select name="position">
+				<optgroup label="Information Technology">
+					<option>Network Engineer</option>
+				</optgroup>
+				<optgroup label="Finance">
+					<option>Financial Analyst</option>
+				</optgroup>
+				<optgroup label="Software Development">
+					<option>Project Manager</option>
+				</optgroup>
+				<optgroup label="Legal">
+					<option>Attorney</option>
+				</optgroup>
+				<optgroup label="Human Resources">
+					<option>Coordinator</option>
+				</optgroup>
+				<optgroup label="Research">
+					<option>Research Associate</option>
+				</optgroup>
+				<optgroup label="Transport">
+					<option>Driver</option>
+				</optgroup>
+			</select><br><br>
+			
+			<label id="office">Office Location:</label>
+			<input list="locations" name="locations">
+			<datalist id="locations">
+				<option value="New York">
+				</option><option value="San Francisco">
+				</option><option value="Detroit">
+				</option><option value="Ann Arbor">
+				</option><option value="Chicago">
+				</option><option value="Pittsburgh">
+			</option></datalist><br>
+
+			<label id="expstart">Expected Start Date: <input type="date" name="startdate"></label><br>
+			
+			<label id="expsal">Expected Salary: $<input type="range" name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"></label><br><span id="salary"></span>
+		
+
+			<label id="portfolio">Personal Website/Portfolio: <input type="url" name="website" placeholder="www.mywebsite.com"></label>
+			
+			</fieldset>
+			
+      </div>
+   
+	<input type="submit" value="Apply">
+
+	</form>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Employment Application Form_files/jquery.min.js.download"></script>
+    <script src="./Employment Application Form_files/bootstrap.min.js.download"></script>
+    <script src="./Employment Application Form_files/bootstrap-formhelpers.min.js.download"></script>
+	
+	
+</body></html>

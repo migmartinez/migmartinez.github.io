@@ -1,0 +1,368 @@
+
+/*Title and Header Styles */
+
+#title {
+	font-style: italic;
+	font-size: 35px;
+	display: inline-block;
+	background-color: beige;
+}
+
+#binfo {
+	font-size: 20px;
+	display: inline-block;
+	background-color: grey;
+}
+
+#eduworkxp {
+	font-size: 20px;
+	display: inline-block;
+	background-color: grey;
+}
+
+#position {
+	font-size: 20px;
+	display: inline-block;
+	background-color: grey;
+}
+
+/*Account Information Styles*/
+
+#acctinfo {
+	background-color: #001122;
+	z-index: -1;
+}
+
+#acctlegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+#fname {
+	color: #223366;
+	background-color: #99ccff;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#lname {
+	color: #001122;
+	background-color: #556677;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#emfield {
+	color: #223366;
+	background-color: #99ccff;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#pass {
+	color: ##001122;
+	background-color: #556677;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#confirm {
+	color: #223366;
+	background-color: #99ccff;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+/*Contact Information Styles*/
+
+#continfo {
+	background-color: #001122;
+	z-index: -1;
+}
+
+#contlegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+#phone {
+	color: #223366;
+	background-color: #99ccff;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#citizen {
+	color: #001122;
+	background-color: #556677;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#addr {
+	color: #223366;
+	background-color: #99ccff;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#city {
+	color: #001122;
+	background-color: #556677;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#state {
+	color: #223366;
+	background-color: #99ccff;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#zip {
+	color: #001122;
+	background-color: #556677;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+/*Educational Information Styles */
+
+#eduinfo {
+	background-color: #585792;
+	z-index: -1;
+}
+
+#edulegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+#degree {
+	color: #d4e1d8;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#instname {
+	color: #c1a5ce;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#major {
+	color: #d4e1d8;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#gpa {
+	color: #c1a5ce;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+/* Work Experience Styles */
+
+#workinfo {
+	margin-top: 10px;
+	background-color: #585792;
+	z-index: -1;
+}
+
+#worklegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+#cname {
+	color: #d4e1d8;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#jobtitle {
+	color: #c1a5ce;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#startdate {
+	color: #d4e1d8;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#enddate {
+	color: #c1a5ce;
+	background-color: #2e3231;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+/* Type of Work Styles */
+
+#typeinfo {
+	background-color: #34568f;
+	z-index: -1;
+}
+
+#typelegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+/*Resume and Cover Letter Styles */
+
+#resumeinfo {
+	margin-top: 10px;
+	background-color: #34568f;
+	z-index: -1;
+}
+
+#resumelegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+#uploadresume {
+	color: 	#cccccc;
+	background-color: #2f425e;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#uploadcletter {
+	color: #2f425e;
+	background-color: #cccccc;
+	border-radius: 1em;
+	border-width: 20px;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+/*Position Styles */
+
+#positioninfo {
+	margin-top: 10px;
+	background-color: #34568f;
+	z-index: -1;
+}	
+
+#positionlegend {
+	z-index: 1;
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-radius: 1px;
+	border-style: double;
+}
+
+#office {
+	color: 	#cccccc;
+	background-color: #2f425e;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#expstart {
+	color: #2f425e;
+	background-color: #cccccc;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#expsal {
+	color: 	#cccccc;
+	background-color: #2f425e;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+#portfolio {
+	color: #2f425e;
+	background-color: #cccccc;
+	border-radius: 1em;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}

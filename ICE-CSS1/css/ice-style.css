@@ -45,6 +45,7 @@ nav ul a {
 }
 
 aside {
+	background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
 	float: right;
 	background-color: white;
 	padding: 10px 0 10px 0;

@@ -1,0 +1,41 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	{% block head %}
+	<title>{% block title %} Portfolio {% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--JavaScript-->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--Portfolio Favicon-->
+	{% endblock %}	
+</head>
+<body>
+	<header>
+		<nav id="nav-top" class="nav-top">
+			{% block nav %}
+				<div class="portlogo">
+					<a href="#"></a>
+				</div>
+				<div class="menu-icon">
+					<a id="toggle-menu" href="javascript:void(0);" onclick="portMenu()">&#9776; Menu</a>
+				</div>
+			<ul>
+				<li><a href="templates/htmlport.html" id="htmlbutton">HTML</a></li>
+				<li><a href='templates/cssport.html' id="cssbutton">CSS</a></li>
+				<li><a href='templates/jsport.html' id="jsbutton">JavaScript</a></li>
+				<li><a href="templates/jqport.html" id="jquerybutton">JQuery</a></li>
+				<li><a href="templates/pyport.html" id="pybutton">Python</a></li>
+			</ul>
+			{% endblock %}
+		</nav>
+	</header>
+</body>
+<footer>
+	{% block footer %}
+	<p>By Miguel Martinez &copy</p>
+	{% endblock %}
+</footer>
+	
