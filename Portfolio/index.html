@@ -1,26 +1,24 @@
 <!DOCTYPE html>	
 <html lang="en">
 <head>
-	{% block head %}
-	<title>{% block title %} Portfolio {% endblock %}</title>
+	<title>Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Style-->
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<!--JavaScript-->
-	<script type="text/javascript" src="{{ url_for('static',filename='js/script.js') }}"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
 	<!--Portfolio Favicon-->
-	{% endblock %}	
+
 </head>
 <body>
 	<header>
 		<nav id="nav-top" class="nav-top">
-			{% block nav %}
 				<div class="portlogo">
 					<a href="#"></a>
 				</div>
 				<div class="menu-icon">
-					<a id="toggle-menu" href="javascript:void(0);" onclick="portMenu()">&#9776; Menu</a>
+					<a id="toggle-menu" href="javascript:void(0);" onclick="Menu()">&#9776; Menu</a>
 				</div>
 			<ul>
 				<li><a href="templates/htmlport.html" id="htmlbutton">HTML</a></li>
@@ -29,13 +27,21 @@
 				<li><a href="templates/jqport.html" id="jquerybutton">JQuery</a></li>
 				<li><a href="templates/pyport.html" id="pybutton">Python</a></li>
 			</ul>
-			{% endblock %}
 		</nav>
 	</header>
+	<h1>This is Miguel Martinez's Portfolio</h1>
+	<img src="static/imgs/pic.jpg" alt="Martinez and family" height="350" width="350">
+	<h2>About Miguel</h2>
+	<p>dlkajfslkdjf;alksdjf;lkasjdf;lkjasldkfj</p>
+
+	<h2>Education</h2>
+	<p>askdjf;laksjdf;lkajsdf;lkjas;ldk;aslkdf</p>
+
+	<h2>Experience</h2>
+	<p>alksdjflaksjdf;laksjdf;lkajsdfl;kjasd</p>
+
 </body>
 <footer>
-	{% block footer %}
 	<p>By Miguel Martinez &copy</p>
-	{% endblock %}
 </footer>
 	

@@ -1,4 +1,4 @@
-function portMenu() {
+function Menu() {
 	var nav_top = document.getElementById("nav-top");
 	var menu_icon = document.getElementById("toggle-menu");
 
