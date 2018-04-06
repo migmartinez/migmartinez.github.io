@@ -1,136 +1,133 @@
-
-
-ul li {
-	list-style-type: none;
+/* Rainbow Bridge Font */
+@font-face {
+	font-family: "Rainbow Bridge";
+	src: url("../fonts/RainbowBridge.ttf");
+	src:
+	url("../fonts/RainbowBridge.woff") format("woff"),
+	url("../fonts/RainbowBridge.eot") format("eot"),
+	url("../fonts/RainbowBridge.svg#filename") format("svg"),
+	url("../fonts/RainbowBridge.woff2") format("woff2");
 }
 
-a:hover {
-	color: white;
+
+
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow ul li{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow ul li:hover, .hvr-pulse-grow ul li:focus, .hvr-pulse-grow ul li:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+nav ul {
+	display: inline-block;
+	list-style-type: none;
+	font-family: "Rainbow Bridge", Arial;
+}
+nav ul li {
+	float: left;
+	padding: 10px;
+	font-weight: bold;
+}
+
+nav ul a:link {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+nav ul a:visited {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	text-decoration: underline;
+	color: #4A5579;
+}
+
+nav ul a:active {
+	color: #4A5579;
+	text-decoration: none;
 }
 
 #homebutton {
-	display: block;
+	display: inline-block;
 	/*background-color: blue;*/
 	text-decoration-color: white;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	height: 50px;
 	padding-top: 20px;
-	border-style: solid;
+
 }
 
 #aboutbutton {
-	display: block;
+	display: inline-block;
 	/*background-color: purple;*/
 	text-decoration-color: skyblue;
-	text-align: center;
+	text-align: right;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	text-orientation: sideways;
 	height: 50px;
 	padding-top: 20px;
-	border-style: solid;
 }
 
 #projectsbutton {
-	display: block;
+	display: inline-block;
 	/*background-color: orange;*/
 	text-decoration-color: black;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	height: 50px;
 	padding-top: 20px;
-	border-style: solid;
 }
 
 #contactbutton {
-	display: block;
+	display: inline-block;
 	/*background-color: red;*/
 	text-decoration-color: black;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	height: 50px;
 	padding-top: 20px;
 	/*background-image: linear-gradient(red, orange, yellow);*/
-	border-style: solid;
 }
 
-.nav-top {
-	background-image: url(../imgs/cloudban.jpg);
-	border-style: solid;
-	border-color: black;
-}
-.nav-top ul{
-	list-style-type: none;
-	padding: 0;
-	background-color: black; 
-	margin: 0;
-	display: none;
-	background-image: url("../imgs/bg.jpg");
-}
-.nav-top ul li, .menu-icon{
-	border-top: 1px solid black;
-}
-.nav-top ul li a{
-	font-size: 1em;
-	color: white;
-	text-decoration: none;
-	padding: .5em 1em;
-	display: block;
-	text-align: center;
-}
-.menu-icon a{
-	font-size: 1.1em;
-	color: white; 
-	text-decoration: none;
-	padding: 10px;
-	display: block;
-	text-align: left;
-}
-
-.menu-icon img {
-	margin-top: 10px;
-}
-.nav-top ul li a.current-page{
-	color: white;
-	font-weight: bold;
-}
-.nav-top ul li a.current-page:before {
-  color: white;
-  padding-right: 4px;
-  position: relative;
-  top: 1px;
-}
-
-.nav-top ul li a:hover, .menu-icon a:hover, .nav-top ul li a:focus, .menu-icon a:focus{
-    background-image: url(../imgs/cloudban.jpg);
-    color: white;
-    font-weight: bold;
-    border-style: solid;
-	border-color: black;
-}
-.nav-top ul li a:hover:before, .nav-top ul li a:focus:before{
-	background-image: url(../imgs/cloudban.jpg);
-	color: white;
-  	padding-right: 4px;
-  	position: relative;
-  	top: 1px;
-}
-/*implement menu toogle*/
-.nav-top.toggle-open ul{
-	display: block;
-}
 
 /*Body Styles*/
 body {
-	background-image: url("../imgs/bg.jpg");
+	background-color: black;
+	color: white;
 }
 
 h2 {
@@ -144,6 +141,10 @@ h2 {
 	padding: 5px;
 }
 
+#maincontent h1 {
+	font-family: "Rainbow Bridge", Arial;
+}
+
 #maincontent img {
 	margin: 5px;
 	border-color: white;
@@ -151,80 +152,15 @@ h2 {
 	border-radius: 2rem;
 }
 
-
+#emailbutton {
+	color: white;
+}
 
 
 /*footer*/
 footer {
 	margin-top: 200px;
+	color: white;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* Icon Drop */
-@-webkit-keyframes hvr-icon-drop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  51%,
-	100% {
-    opacity: 1;
-  }
-}
-@keyframes hvr-icon-drop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  51%,
-	100% {
-    opacity: 1;
-  }
-}
-/* Icon Drop */
-.hvr-icon-drop {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-icon-drop .hvr-icon{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.hvr-icon-drop:hover .hvr-icon, .hvr-icon-drop:focus .hvr-icon, .hvr-icon-drop:active .hvr-icon {
-  opacity: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-animation-name: hvr-icon-drop;
-  animation-name: hvr-icon-drop;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
