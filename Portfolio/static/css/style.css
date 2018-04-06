@@ -53,7 +53,6 @@ nav ul {
 nav ul li {
 	float: left;
 	padding: 10px;
-	font-weight: bold;
 }
 
 nav ul a:link {
@@ -68,11 +67,11 @@ nav ul a:visited {
 
 nav ul a:hover {
 	text-decoration: underline;
-	color: #4A5579;
+	color: #9b0375;
 }
 
 nav ul a:active {
-	color: #4A5579;
+	color: #9b0375;
 	text-decoration: none;
 }
 
@@ -135,14 +134,27 @@ h2 {
 }
 
 #maincontent {
-	background-image: url(../imgs/cloudban.jpg);
+	background-image: url(../imgs/lol.gif);
+	background-size: contain;
+	background-position: center;
+	background-attachment: fixed;
 	margin: 2px;
 	color: white;
 	padding: 5px;
+	padding-left: 20px;
+	transition: all 0s ease-in-out 0.5s;
+  	backface-visibility: hidden;
+  	position: relative;
+  	height: 450px;
 }
 
 #maincontent h1 {
-	font-family: "Rainbow Bridge", Arial;
+	font-family: "Rainbow Bridge",Arial;
+	display: block;
+	background-color: black;
+	font-weight: normal;
+	font-size: 50px;
+	padding: 15px;
 }
 
 #maincontent img {
@@ -150,6 +162,40 @@ h2 {
 	border-color: white;
 	border-style: solid;
 	border-radius: 2rem;
+}
+
+.maincontent:hover {
+	opacity: 0.9;
+	transition-delay: 0s;
+	backface-visibility: visible;
+}
+
+.maincontent:hover .middle {
+	opacity: 1;
+	transition-delay: 0s;
+	backface-visibility: visible;
+}
+
+
+.middle {
+	transition: 1s ease-in-out;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	text-align: center;
+}	
+
+.text {
+	background-color: black;
+  	color: white;
+  	font-size: 16px;
+  	padding: 0px;
+  	display: block;
+  	margin: 0;
+  	transition: 0;
 }
 
 #emailbutton {
