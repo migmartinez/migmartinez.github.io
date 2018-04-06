@@ -11,3 +11,8 @@ function Menu() {
 	}
 
 }
+
+document.addEventListener('mouseover', function (e) ) {
+	var welcomeText = document.getElementById('middle');
+	welcometext.className = "middle active";
+}, false);
