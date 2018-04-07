@@ -9,8 +9,22 @@
 	url("../fonts/RainbowBridge.woff2") format("woff2");
 }
 
+.zoom {
+    padding: 5px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 
+
+/* HEADER AND NAV STYLES */
 
 /* Pulse Grow */
 @-webkit-keyframes hvr-pulse-grow {
@@ -122,11 +136,21 @@ nav ul a:active {
 	/*background-image: linear-gradient(red, orange, yellow);*/
 }
 
+header img {
+	float: right;
+	height: 60px;
+	width: 75px;
+	padding: 15px;
+}
+
+
+
 
 /*Body Styles*/
 body {
 	background-color: black;
 	color: white;
+	margin-bottom: 200px;
 }
 
 h2 {
@@ -204,8 +228,58 @@ h2 {
   	transition: 0;
 }
 
-#emailbutton {
-	color: white;
+.mainbuttons a{
+	text-decoration: none;
+}
+.about {
+	display: block;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.about h2 {
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 40px;
+}
+
+.projects {
+	display: block;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.projects h2 {
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 40px;
+}
+
+.contact {
+	display: block;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.contact h2 {
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 40px;
 }
 
 
@@ -235,6 +309,12 @@ h2 {
 	height: 400px;
 }
 
+.column img:hover {
+	opacity: 0.7;
+}
+
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -246,26 +326,152 @@ h2 {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    flex: 33%;
-    max-width: 33%;
+    flex: 12%;
+    max-width: 12%;
   }
 }
 
+#img1 {
+	display: inline-block;
+}
+#img2 {
+	display: inline-block;
+	padding-top: 175px;
+}
+#img3 {
+	display: inline-block;
+	padding-top: 350px;
+}
+#img4 {
+	display: inline-block;
+}
+#img5 {
+	display: inline-block;
+	padding-top: 175px;
+}
+#img6 {
+	display: inline-block;
+	padding-top: 350px;
+}
+#img7 {
+	display: inline-block;
+}
+#img8 {
+	display: inline-block;
+	padding-top: 175px;
+}
+#img9 {
+	display: inline-block;
+	padding-top: 350px;
+}
 
+.aboutpara {
+	font-family: sans-serif, Futura;
+	padding: 10px;
+	background-color: rgb(155, 74, 155);opacity:0.7;
+	display: inline-block;
+	overflow-wrap: normal;
+}
+
+.abouthead {
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	color: grey;
+	padding: 10px;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE */
+h3 {
+	margin-left: 20px;
+}
+#socialmedia img {
+	height: 70px;
+	width: 70px;
+	padding-left: 10px;
+}
+
+.contacthead {
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	color: grey;
+	padding: 10px;
+	font-size: 30px;
+}
+
+.emailbutton {
+	color: white;
+	padding: 10px;
+	background-color: pink;
+	display: inline-block;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	font-size: 30px;
+	margin-left: 20px;
+	border-radius: 1rem;
+}
+
+.emailbutton a:hover {
+	color: #8C8686;
+	text-decoration: none;
+} 
+
+.emailbutton a:link {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+.emailbutton a:active {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+.emailbutton a:visited {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+/* PROJECTS PAGE */
+.projectshead {
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	color: grey;
+	padding: 10px;
+	font-size: 30px;
+}
 
 /*footer*/
 footer {
 	font-family: "Rainbow Bridge", Arial;
 	font-weight: normal;
-	padding: 5px;
-	margin-top: 200px;
 	color: white;
 	display: block;
 	border-style: solid;
-	border-color: #101a6b;
-	border-width: 0.25rem;
+	border-color: pink;
+	bottom: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	height: 60px;
+	background-color: black;
+	text-align: right;
+	background-image: url(../imgs/foot.gif);
+	background-position: center;
+	background-attachment: fixed;
 }
 
 footer p {
-	padding-left: 10px;
+	padding-right: 10px;
+	background-color: black;
+	display: inline-block;
 }
