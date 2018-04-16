@@ -1,136 +1,152 @@
-
-
-ul li {
-	list-style-type: none;
+/* Rainbow Bridge Font */
+@font-face {
+	font-family: "Rainbow Bridge";
+	src: url("../fonts/RainbowBridge.ttf");
+	src:
+	url("../fonts/RainbowBridge.woff") format("woff"),
+	url("../fonts/RainbowBridge.eot") format("eot"),
+	url("../fonts/RainbowBridge.svg#filename") format("svg"),
+	url("../fonts/RainbowBridge.woff2") format("woff2");
 }
 
-a:hover {
-	color: white;
+/* Zoom */
+.zoom {
+    padding: 5px;
+    transition: transform .2s; 
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+.zoom:hover {
+    transform: scale(1.1); 
+}
+
+
+
+/* HEADER AND NAV STYLES */
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow ul li{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow ul li:hover, .hvr-pulse-grow ul li:focus, .hvr-pulse-grow ul li:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+nav ul {
+	display: inline-block;
+	list-style-type: none;
+	font-family: "Rainbow Bridge", Arial;
+}
+nav ul li {
+	float: left;
+	padding: 10px;
+}
+
+nav ul a:link {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+nav ul a:visited {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	text-decoration: underline;
+	color: #9b0375;
+}
+
+nav ul a:active {
+	color: #9b0375;
+	text-decoration: none;
 }
 
 #homebutton {
-	display: block;
-	/*background-color: blue;*/
+	display: inline-block;
 	text-decoration-color: white;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	height: 50px;
 	padding-top: 20px;
-	border-style: solid;
+
 }
 
 #aboutbutton {
-	display: block;
-	/*background-color: purple;*/
+	display: inline-block;
 	text-decoration-color: skyblue;
-	text-align: center;
+	text-align: right;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	text-orientation: sideways;
 	height: 50px;
 	padding-top: 20px;
-	border-style: solid;
 }
 
 #projectsbutton {
-	display: block;
-	/*background-color: orange;*/
+	display: inline-block;
 	text-decoration-color: black;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	height: 50px;
 	padding-top: 20px;
-	border-style: solid;
 }
 
 #contactbutton {
-	display: block;
-	/*background-color: red;*/
+	display: inline-block;
 	text-decoration-color: black;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
 	text-decoration: none;
 	height: 50px;
 	padding-top: 20px;
-	/*background-image: linear-gradient(red, orange, yellow);*/
-	border-style: solid;
 }
 
-.nav-top {
-	background-image: url(../imgs/cloudban.jpg);
-	border-style: solid;
-	border-color: black;
-}
-.nav-top ul{
-	list-style-type: none;
-	padding: 0;
-	background-color: black; 
-	margin: 0;
-	display: none;
-	background-image: url("../imgs/bg.jpg");
-}
-.nav-top ul li, .menu-icon{
-	border-top: 1px solid black;
-}
-.nav-top ul li a{
-	font-size: 1em;
-	color: white;
-	text-decoration: none;
-	padding: .5em 1em;
-	display: block;
-	text-align: center;
-}
-.menu-icon a{
-	font-size: 1.1em;
-	color: white; 
-	text-decoration: none;
-	padding: 10px;
-	display: block;
-	text-align: left;
+header img {
+	float: right;
+	height: 60px;
+	width: 75px;
+	padding: 15px;
 }
 
-.menu-icon img {
-	margin-top: 10px;
-}
-.nav-top ul li a.current-page{
-	color: white;
-	font-weight: bold;
-}
-.nav-top ul li a.current-page:before {
-  color: white;
-  padding-right: 4px;
-  position: relative;
-  top: 1px;
-}
 
-.nav-top ul li a:hover, .menu-icon a:hover, .nav-top ul li a:focus, .menu-icon a:focus{
-    background-image: url(../imgs/cloudban.jpg);
-    color: white;
-    font-weight: bold;
-    border-style: solid;
-	border-color: black;
-}
-.nav-top ul li a:hover:before, .nav-top ul li a:focus:before{
-	background-image: url(../imgs/cloudban.jpg);
-	color: white;
-  	padding-right: 4px;
-  	position: relative;
-  	top: 1px;
-}
-/*implement menu toogle*/
-.nav-top.toggle-open ul{
-	display: block;
-}
+
 
 /*Body Styles*/
 body {
-	background-image: url("../imgs/bg.jpg");
+	background-color: black;
+	color: white;
+	margin-bottom: 300px;
 }
 
 h2 {
@@ -138,10 +154,27 @@ h2 {
 }
 
 #maincontent {
-	background-image: url(../imgs/cloudban.jpg);
+	background-image: url(../imgs/lol.gif);
+	background-size: contain;
+	background-position: center;
+	background-attachment: fixed;
 	margin: 2px;
 	color: white;
 	padding: 5px;
+	padding-left: 20px;
+	transition: all 0s ease-in-out 0.5s;
+  	backface-visibility: hidden;
+  	position: relative;
+  	height: 450px;
+}
+
+#maincontent h1 {
+	font-family: "Rainbow Bridge",Arial;
+	display: block;
+	background-color: black;
+	font-weight: normal;
+	font-size: 50px;
+	padding: 15px;
 }
 
 #maincontent img {
@@ -151,80 +184,364 @@ h2 {
 	border-radius: 2rem;
 }
 
+.maincontent:hover {
+	opacity: 0.9;
+	transition-delay: 0s;
+	backface-visibility: visible;
+}
+
+.maincontent:hover .middle {
+	opacity: 1;
+	transition-delay: 0s;
+}
+
+.maincontent .middle:hover, .maincontent .middle.active {
+	display: block;
+}
+
+.middle.active {
+	display: block;
+}
+
+.middle {
+	transition: 3s ease-in-out;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	text-align: center;
+}	
+
+.text {
+	background-color: black;
+  	color: white;
+  	font-size: 16px;
+  	padding: 0px;
+  	display: block;
+  	margin: 0;
+  	transition: 0;
+}
+
+.mainbuttons a{
+	text-decoration: none;
+}
+.about {
+	display: block;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.about h2 {
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 40px;
+}
+
+.projects {
+	display: block;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.projects h2 {
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 40px;
+}
+
+.contact {
+	display: block;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.contact h2 {
+	margin-top: 20px;
+	padding-top: 20px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 40px;
+}
 
 
+
+
+
+
+/* ABOUT PAGE */
+.row {
+	display: flex;
+	padding: 4px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	display: block;
+	width: 390px;
+	height: 400px;
+}
+
+.column img:hover {
+	opacity: 0.7;
+}
+
+
+
+/* two column layout */
+@media screen and (max-width: 800px) {
+  .column {
+    flex-shrink: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 12%;
+    max-width: 12%;
+  }
+}
+
+#img1 {
+	display: inline-block;
+}
+#img2 {
+	display: inline-block;
+	padding-top: 175px;
+}
+#img3 {
+	display: inline-block;
+	padding-top: 350px;
+}
+#img4 {
+	display: inline-block;
+}
+#img5 {
+	display: inline-block;
+	padding-top: 175px;
+}
+#img6 {
+	display: inline-block;
+	padding-top: 350px;
+}
+#img7 {
+	display: inline-block;
+}
+#img8 {
+	display: inline-block;
+	padding-top: 175px;
+}
+#img9 {
+	display: inline-block;
+	padding-top: 350px;
+}
+
+.aboutpara {
+	font-family: sans-serif, Futura;
+	padding: 10px;
+	background-color: rgb(155, 74, 155);opacity:0.7;
+	display: inline-block;
+	overflow-wrap: normal;
+	border-radius: 1rem;
+	width: 66%;
+}
+
+.abouthead {
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	color: #dd58f4;
+	padding: 10px;
+	font-size: 30px;
+}
+
+.photogrid {
+	padding-bottom: 100px;
+}
+
+
+
+/* CONTACT PAGE */
+
+#socialmedia {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#socialmedia h3 {
+	margin-left: 735px;
+	margin-right: auto;
+	display: block;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	font-size: 30px;
+
+}
+#socialmedia img {
+	height: 70px;
+	width: 70px;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 2px;
+}
+
+
+
+.contacthead {
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	color: #dd58f4;
+	padding: 10px;
+	font-size: 30px;
+}
+
+.emailbutton {
+	color: white;
+	padding: 10px;
+	background-color: pink;
+	display: block;
+	width: 20%;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1rem;
+	text-align: center;
+}
+
+.emailbutton a:hover {
+	color: #8C8686;
+	text-decoration: none;
+} 
+
+.emailbutton a:link {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+.emailbutton a:active {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+.emailbutton a:visited {
+	color: #8C8686;
+	text-decoration: none;
+}
+
+.mypic img{
+	height: 350px;
+	width: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1rem;
+	border-style: solid;
+	border-color: lightpink;
+	margin-bottom: 20px;
+}
+
+/* PROJECTS PAGE */
+.projectshead {
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-weight: normal;
+	color: #dd58f4;
+	padding: 10px;
+	font-size: 30px;
+}
+
+.resume h2 {
+	margin-left: 300px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.resume img{
+	margin-left: 350px;
+}
+
+.proj1 h2{
+	margin-left: 300px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.proj1 p {
+	margin-left: 350px;	
+	width: 350px;
+	font-family: sans-serif, Futura;
+	background-color: rgb(155, 74, 155);opacity:0.7;
+	padding: 10px;
+	border-radius: 1rem;
+}
+
+.proj2 h2{
+	margin-left: 300px;
+	font-family: "Rainbow Bridge", sans-serif, Futura;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.proj2 p {
+	margin-left: 350px;	
+	font-family: sans-serif, Futura;
+	background-color: rgb(155, 74, 155);opacity:0.7;
+	width: 350px;
+	padding: 10px;
+	border-radius: 1rem;
+}
 
 /*footer*/
 footer {
-	margin-top: 200px;
+	font-family: "Rainbow Bridge", Arial;
+	font-weight: normal;
+	color: white;
+	display: block;
+	border-style: solid;
+	border-color: pink;
+	bottom: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	height: 40px;
+	background-color: black;
+	text-align: right;
+	background-image: url(../imgs/foot.gif);
+	background-position: center;
+	background-attachment: fixed;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Icon Drop */
-@-webkit-keyframes hvr-icon-drop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  51%,
-	100% {
-    opacity: 1;
-  }
-}
-@keyframes hvr-icon-drop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  51%,
-	100% {
-    opacity: 1;
-  }
-}
-/* Icon Drop */
-.hvr-icon-drop {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-icon-drop .hvr-icon{
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.hvr-icon-drop:hover .hvr-icon, .hvr-icon-drop:focus .hvr-icon, .hvr-icon-drop:active .hvr-icon {
-  opacity: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-animation-name: hvr-icon-drop;
-  animation-name: hvr-icon-drop;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+footer p {
+	padding-right: 10px;
+	background-color: black;
+	display: inline-block;
 }

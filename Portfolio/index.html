@@ -1,46 +1,56 @@
 <!DOCTYPE html>	
 <html lang="en">
 <head>
-	<title>Portfolio</title>
+	<title>Miguel Martinez Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Style-->
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<!--JavaScript-->
-	<script type="text/javascript" src="static/js/script.js"></script>
+	<script src="static/js/script.js"></script>
 	<!--Portfolio Favicon-->
-
+	<link rel="icon" type="image/x-icon" href="static/imgs/favicon.ico"/>
 </head>
 <body>
 	<header>
-		<nav id="nav-top" class="nav-top">
-				<div class="menu-icon">
-					<a id="toggle-menu" href="javascript:void(0);" onclick="Menu()"><img src="./static/imgs/logo.png" alt="Miguel Martinez" height="40" width="60">&#9776; Menu</a>
-				</div>
-			<ul>
-				<li><a href="index.html" class="hvr-icon-drop" id="homebutton">HOME</a></li>
-				<li><a href='about.html' id="aboutbutton">ABOUT</a></li>
-				<li><a href='projects.html' id="projectsbutton">PROJECTS</a></li>
-				<li><a href="contact.html" id="contactbutton">CONTACT</a></li>
-			</ul>
+		<img src="static/imgs/logo.png" alt="MM">
+		<nav>
+			<div class="hvr-pulse-grow">
+				<ul>
+					<li><a href="index.html" id="homebutton">HOME</a></li>
+					<li><a href='about.html' id="aboutbutton">ABOUT</a></li>
+					<li><a href='projects.html' id="projectsbutton">PROJECTS</a></li>
+					<li><a href="contact.html" id="contactbutton">CONTACT</a></li>
+				</ul>				
+			</div>
 		</nav>
 	</header>
 
-	<div id="maincontent">
-		<h1>This is Miguel Martinez's Portfolio</h1>
-		<img src="static/imgs/pic.jpg" alt="Martinez and family" height="350" width="350">
+	<div id="maincontent" class="maincontent">
+		<div class="middle" id="middle">
+			<div class="text"><h1 class="active">Welcome to Miguel Martinez's Portfolio</h1></div>
+		</div>
 	</div>
-	<h2>About Miguel</h2>
-	<p>dlkajfslkdjf;alksdjf;lkasjdf;lkjasldkfj</p>
-
-	<h2>Education</h2>
-	<p>askdjf;laksjdf;lkajsdf;lkjas;ldk;aslkdf</p>
-
-	<h2>Experience</h2>
-	<p>alksdjflaksjdf;laksjdf;lkajsdfl;kjasd</p>
-
-</body>
+	<div class="mainbuttons">
+		<div class="about">
+			<a href="about.html">
+				<h2>About Miguel</h2><br>
+			</a>
+		</div>
+		<div class="projects">
+			<a href="projects.html">
+				<h2>Projects + Experience</h2><br>
+			</a>
+		</div>
+		<div class="contact">
+			<a href="contact.html">
+				<h2>Contact Me</h2><br>
+			</a>
+		</div>
+	</div>
 <footer>
-	<p>By Miguel Martinez &copy</p>
+	<p> Site By Miguel Martinez, Art by Valenberg &copy;</p>
 </footer>
+</body>
+
 	
