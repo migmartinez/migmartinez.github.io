@@ -17,17 +17,20 @@
 		function showImg() {
 			var y = document.getElementById("pic1");
 			y.style.display = "flex";
+			y.style.justify.content = "center";
 		}
 	</script>
 </head>
 <body>
 	<h1>Miguel Martinez</h1>
+	<div id = "pics" >
 	<div id="pic1">
 		<img id="img1" src="images/examPic.JPG"/>
 	</div>
 	<div id="pic2">
 		<img id="img2" src="images/UMSI-logo.jpg"/>
 	</div>
+</div>
 
 	<button type="button" onclick="hideImg()">Hide Image</button>
 	<button type="button" onclick="showImg()">Show Image</button>

@@ -12,6 +12,7 @@ body {
 	border-color: blue;
 	border-style: solid;
 	display: inline-block;
+	flex: 1;
 }
 
 #pic2 img{
@@ -22,19 +23,18 @@ body {
 	display: inline-block;
 }
 
+#pics {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: row;
+  	height: 100%;
+  	width: 100%;
+}
+
 #pic1 {
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	flex-wrap: nowrap;
-  	flex-direction: row;
+	margin: 30px;
 }
-
 #pic2 {
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	flex-wrap: nowrap;
-  	flex-direction: row;
+	margin: 10px;
 }
-
