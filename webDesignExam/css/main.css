@@ -1,0 +1,13 @@
+#pic1 img{
+	border-width: 5px;
+	padding: 5%;
+	border-color: blue;
+	display: inline-block;
+}
+
+#pic2 {
+	border-width: 5px;
+	padding: 5%;
+	border-color: blue;
+	display: inline-block;
+}
