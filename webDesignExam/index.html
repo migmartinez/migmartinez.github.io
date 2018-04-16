@@ -8,8 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script>
 		function hideImg() {
-			var x = document.getElementbyId("pic1");
+			var x = document.getElementById("pic1");
 			x.style.display = "none";
+
+
+		}
+
+		function showImg() {
+			var y = document.getElementById("pic1");
+			y.style.display = "flex";
 		}
 	</script>
 </head>
@@ -23,7 +30,7 @@
 	</div>
 
 	<button type="button" onclick="hideImg()">Hide Image</button>
-	<button type="button">Show Image</button>
+	<button type="button" onclick="showImg()">Show Image</button>
 </body>
 <footer>
 </footer>
