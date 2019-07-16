@@ -1,0 +1,153 @@
+/* imported: '/styles/options/colorScheme.scss */
+
+body {
+  background: #f2f2f2;
+  color: #0c0c0c;
+}
+#curtains { background: #f2f2f2; }
+#curtains .coverContent.light { color: #0c0c0c; }
+#curtains .coverContent.dark { color: #0c0c0c; }
+#curtains .coverContent.light ~ .scrollDown svg { stroke: #0c0c0c; }
+#curtains .coverContent.dark ~ .scrollDown svg { stroke: #0c0c0c; }
+.navToggle {
+  fill: #0c0c0c;
+  stroke: #0c0c0c;
+  color: #0c0c0c;
+}
+.navToggle.underCover {
+  fill: #0c0c0c;
+  stroke: #0c0c0c;
+  color: #0c0c0c;
+}
+.guts { background: #f2f2f2; }
+.about .resume:hover::after { background: #0c0c0c; }
+.coverDivider { stroke: #0c0c0c; }
+.noThumb { background: rgba(12, 12, 12, 0.1); }
+hr { border-bottom: 1px solid rgba(12, 12, 12, 0.15); }
+h4 { color: rgba(12, 12, 12, 0.5); }
+a {
+  color: #0c0c0c;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.3);
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+}
+a:hover { border-bottom: 1px solid rgba(12, 12, 12, 0.6); }
+carbon-caption a {
+  color: rgba(12, 12, 12, 0.5);
+  border-bottom: 1px solid rgba(12, 12, 12, 0.25);
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+}
+carbon-caption a:hover { border-bottom: 1px solid rgba(12, 12, 12, 0.5); }
+h2 a { border-bottom: 1px solid rgba(12, 12, 12, 0); }
+h2 a:hover { border-bottom: 1px solid rgba(12, 12, 12, 0.5); }
+.private { background: #e6e6e6; }
+#unlockBlock .field::before { color: rgba(12, 12, 12, 0.1); }
+.thumb:hover .line:after { background: rgba(12, 12, 12, 0.3); }
+.thumb.accented:before { background: #0ab0ed; }
+.thumb.below.accented:hover .thumbImage:before { background: #0ab0ed; }
+carbon-text.quote { border-left: 1px solid rgba(12, 12, 12, 0.3); }
+carbon-caption { color: rgba(12, 12, 12, 0.5); }
+carbon-image > img { background: rgba(12, 12, 12, 0.1); }
+carbon-image > img.loaded { background: none; }
+#zoomer.open { background: rgba(242, 242, 242, 0.9); }
+carbon-paginator svg { stroke: rgba(12, 12, 12, 0.3); }
+carbon-paginator a {
+  -webkit-transition: color 0.2s ease, stroke 0.2s ease;
+  transition: color 0.2s ease, stroke 0.2s ease;
+}
+carbon-paginator a .dem {
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+carbon-paginator a:hover .dem { color: rgba(10, 176, 237, 0.5); }
+carbon-paginator a:hover svg { stroke: rgba(10, 176, 237, 0.5); }
+carbon-paginator a:hover { color: #0ab0ed; } /* MENU COLOR */
+.block .description p { color: rgba(12, 12, 12, 0.5); }
+.block .title { color: #0ab0ed; }
+.navList { background: rgba(10, 176, 237, 0.95); }
+.navList a:hover { /*border-bottom: 1px solid rgba(242, 242, 242, 0.6);*/ text-decoration: none; }
+.navList a {
+  color: #f2f2f2;
+  border-bottom: 1px solid rgba(242, 242, 242, 0);
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+}
+.active .navToggle {
+  fill: #f2f2f2 !important;
+  stroke: #f2f2f2 !important;
+  color: #f2f2f2 !important;
+}
+#links {
+  border-top: 1px solid rgba(12, 12, 12, 0.15);
+  border-bottom: 1px solid rgba(12, 12, 12, 0.15);
+}
+#availability .status { border-bottom: 1px solid rgba(12, 12, 12, 0.15); }
+.contact .guts > div:first-child { background: rgba(12, 12, 12, 0.03); }
+carbon-branding a {
+  border-bottom: 1px solid rgba(12, 12, 12, 0);
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+}
+carbon-branding a:hover { border-bottom: 1px solid rgba(12, 12, 12, 0.3); }
+form input,
+form textarea {
+  background: rgba(242, 242, 242, 0.45);
+  border-bottom: 1px solid rgba(12, 12, 12, 0.2);
+  color: #0c0c0c;
+  -webkit-transition: background-color 0.2s ease, border 0.1s ease;
+  transition: background-color 0.2s ease, border 0.1s ease;
+}
+.field.focused input,
+.field.focused textarea { border-bottom-color: #0ab0ed; }
+button {
+  color: #f2f2f2;
+  background: #0ab0ed;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: background-color 0.2s ease, padding 0.2s ease;
+  transition: background-color 0.2s ease, padding 0.2s ease;
+}
+button:hover { background: #0a97cb; }
+.setup button,
+.invalid button { background: rgba(10, 176, 237, 0.5); }
+.setup button:hover,
+.invalid button:hover { background: rgba(10, 176, 237, 0.5); }
+.setup.valid button { background: #0ab0ed; }
+.setup.valid button:hover { background: #0a97cb; }
+.confirmedGuts::before,
+#requestAccessBlock .formSent::before {
+  color: #f2f2f2;
+  background: #0ab0ed;
+}
+::placeholder {
+  color: rgba(12, 12, 12, 0.2);
+  -webkit-font-smoothing: antialiased;
+}
+.focused ::placeholder {
+  color: rgba(12, 12, 12, 0.5);
+  -webkit-font-smoothing: antialiased;
+}
+.dem { color: rgba(12, 12, 12, 0.5); }
+carbon-player.audio .control { background: rgba(10, 176, 237, 1); }
+carbon-player.audio .control:hover { background: #0a97cb; }
+carbon-player.audio.loading .control:hover { background: #0a97cb; }
+carbon-waveform > .bar.fill { background: rgba(10, 176, 237, 1); }
+carbon-player.audio.played time.current { color: rgba(10, 176, 237, 1); }
+carbon-player.audio.ended time.total { color: rgba(10, 176, 237, 1); }
+carbon-player carbon-scrubber > .track > .playedBar { background: rgba(10, 176, 237, 1); }
+carbon-player.video .control { background: rgba(26, 26, 26, 0.2); }
+carbon-player.video .control:hover { background: rgba(10, 176, 237, 1); }
+.collapsed carbon-waveform > .bar { background: rgba(12, 12, 12, 0.75); }
+.collapsed carbon-waveform > .bar.fill { background: #0ab0ed; }
+.collapsed carbon-player time { color: rgba(12, 12, 12, 0.75); }
+carbon-player > .posterPlay:hover:before { color: #0ab0ed; }
+.coverEditor .coverOverlay-option10 i { background: #0ab0ed; }
+.overlay.option10 { background: linear-gradient(rgba(10, 176, 237, 0.5), rgba(10, 176, 237, 0.7)); }
+/* imported: '/styles/options/fontScheme.scss */
+
+body { font-family: 'Karla', helvetica, arial, sans-serif; }
+input, textarea, button { font-family: 'Karla', helvetica, arial, sans-serif; }
+em, .em { font-style: italic; }
+strong, .strong { font-weight: 700; }
+.lead { letter-spacing: -0.01em; }
+/* imported: '/styles/options/siteWidth.scss */

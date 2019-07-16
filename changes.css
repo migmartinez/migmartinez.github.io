@@ -1,0 +1,65 @@
+#welcome {
+	color: red;
+	margin-right: 2%;
+}
+
+.welcome {
+	top: 40vh;
+	position: relative;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+/*.loading-page {
+	background: #143975;
+	width: 100vh;
+	height: 100vh;
+}
+
+.loading-page .counter h1 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 300px;
+	font-weight: bolder;
+	margin-top: -10px;
+}
+
+h2 {
+	position: fixed;
+	top: 70%;
+	left: 40%;
+	color: white;
+	font-size: 50px;
+	font-weight: normal;
+	margin-top: -10px;
+} */
+
+.contactEmail {
+	font-size: 60px;
+	top: 40vh;
+	position: relative;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.contactPhone {
+	font-size: 30px;
+	top: 30vh;
+	position: relative;
+	margin-left: 37%;
+	margin-right: 32%;
+}
+
+.contactPhone a {
+	color: white;
+}
+
+.contactEmail a {
+	color: white;
+}
+
+.jumbotron {
+	background: none;
+}
