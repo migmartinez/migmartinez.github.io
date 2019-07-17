@@ -48,7 +48,7 @@ h2 a:hover { border-bottom: 1px solid rgba(12, 12, 12, 0.5); }
 .thumb.below.accented:hover .thumbImage:before { background: #0ab0ed; }
 carbon-text.quote { border-left: 1px solid rgba(12, 12, 12, 0.3); }
 carbon-caption { color: rgba(12, 12, 12, 0.5); }
-carbon-image > img { background: rgba(12, 12, 12, 0.1); }
+/* carbon-image > img { background: rgba(12, 12, 12, 0.1); } */
 carbon-image > img.loaded { background: none; }
 #zoomer.open { background: rgba(242, 242, 242, 0.9); }
 carbon-paginator svg { stroke: rgba(12, 12, 12, 0.3); }
