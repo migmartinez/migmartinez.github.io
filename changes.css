@@ -1,6 +1,22 @@
+@font-face {
+	font-family: CodeLight;
+	src: url(CodeDemo-Light.otf);
+
+}
+
+@font-face {
+	font-family: CodeBold;
+	src: url(CodeDemo-Bold.otf);
+
+}
+
 #welcome {
-	color: red;
 	margin-right: 2%;
+	font-family: CodeBold;
+}
+
+#subWelcome {
+	font-family: CodeLight;
 }
 
 .welcome {
@@ -8,7 +24,71 @@
 	position: relative;
 	margin-left: 18%;
 	margin-right: 18%;
+	font-family: CodeLight;
+	color: white;
 }
+
+.navItem {
+	font-family: CodeBold;
+}
+
+.navToggle {
+	fill: white;
+	stroke: white;
+	color: white;
+	font-family: CodeLight;
+}
+
+.navList {
+	background-color: #343a42;
+}
+
+.svg-wrapper {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+ 
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: /*140 540;*/ 500 500;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: white;
+}
+
+.text {
+  color: #fff;
+  font-family: CodeBold;
+  font-size: 22px;
+  letter-spacing: 8px;
+  
+  position: relative;
+  top: -250px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 500 500;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+
 /*.loading-page {
 	background: #143975;
 	width: 100vh;
@@ -62,4 +142,9 @@ h2 {
 
 .jumbotron {
 	background: none;
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
 }
