@@ -10,6 +10,35 @@
 
 }
 
+.btn-group {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -8vh;
+
+}
+
+.btn {
+	background-color: black;
+	color: white;
+	border-color: white;
+	font-family: CodeBold;
+	font-size: 20px;
+}
+
+.btn:hover {
+	background-color: white;
+	color: black;
+}
+.btn-primary {
+
+}
+
+.btn-default {
+
+}
+
 #welcome {
 	margin-right: 2%;
 	font-family: CodeBold;
@@ -73,13 +102,25 @@ color: white;
 .text {
   color: #fff;
   font-family: CodeBold;
-  
+  width: 100%;
   letter-spacing: 8px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   position: relative;
   top: -250px;
+}
+
+.textContact {
+  color: #fff;
+  width: 100%;
+  font-family: CodeBold;
+  letter-spacing: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  top: -200px;
 }
 
 #hovrHeader {
@@ -160,21 +201,20 @@ h2 {
 	margin-top: -10px;
 } */
 
-.contactEmail {
-	font-size: 150%;
+#contactEmail {
+		line-height: 1px;
+}
+
+#contactPhone {
+	
 	line-height: 1px;
 }
 
-.contactPhone {
-	font-size: 150%;
-	line-height: 1px;
-}
-
-.contactPhone a {
+#contactPhone a {
 	color: white;
 }
 
-.contactEmail a {
+#contactEmail a {
 	color: white;
 }
 
@@ -185,6 +225,7 @@ h2 {
 
 .container {
 	line-height: 1px;
+
 }
 #foot {
 	position: absolute;
