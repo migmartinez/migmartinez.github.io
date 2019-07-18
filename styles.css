@@ -407,7 +407,7 @@ carbon-piece.text {
   max-width: 40em;
 }
 carbon-image { margin: 0 auto; }
-carbon-image.page { background: #fff !important; }
+/*carbon-image.page { background: #fff !important; } */
 carbon-player { position: absolute !important; }
 carbon-caption {
   display: block;
@@ -2138,13 +2138,13 @@ article .longPost { text-align: left; }
   margin-right: 0.25em;
 }
 .project carbon-piece:first-child { margin-top: 0; }
-.project carbon-piece .page { margin: 4em auto 0; }
+/*.project carbon-piece .page { margin: 4em auto 0; } */
 .project carbon-piece { margin: 4em auto; }
 .project.full { height: 100%; }
 @media only screen and (max-width: 500px) {
   .project .content { margin: 4em auto; }
   carbon-piece { margin: 2em auto; }
-  carbon-piece .page { margin: 2em auto 0; }
+  /*carbon-piece .page { margin: 2em auto 0; } */
 }
 carbon-text { max-width: 48em; }
 carbon-text.subtitle {
