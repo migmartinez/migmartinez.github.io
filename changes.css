@@ -202,12 +202,17 @@ h2 {
 } */
 
 #contactEmail {
-	font-size: 70%;	
-	width: 75%;
+	font-size: 4vw;	
+	word-wrap: break-word;
+	margin: 8px;
+	padding: 8px;
 }
 
 #contactPhone {
-	font-size: 70%;
+	font-size: 3.5vw;
+	word-wrap: break-word;
+	margin: 8px;
+	padding: 8px;
 	
 }
 
