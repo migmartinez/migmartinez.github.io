@@ -227,7 +227,7 @@ h2 {
 	line-height: 1px;
 
 }
-/*#foot {
+#foot {
 	position: fixed;
 	bottom: 1px;
 	color: white;
@@ -243,4 +243,4 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #foot p {
 	text-align: center;
 	font-family: CodeBold;
-} */
+} 
