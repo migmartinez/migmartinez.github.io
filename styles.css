@@ -603,7 +603,11 @@ form .message {
 }
 .coverImg {
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+
   height: 100%;
   position: absolute;
   width: 100%;
@@ -1611,6 +1615,8 @@ carbon-waveform { bottom: 20px; }
 }
 .zoomable {
   cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: -o-zoom-in;
   cursor: zoom-in;
 }
 

@@ -15,28 +15,6 @@
 
 	</head>
 	<body class="desktop">
-    <!--<div class="loading-page">
-      <div class="counter">
-        <h1></h1>
-        <h2>LOADED..</h2>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        var counter = 0;
-        var c = 0;
-        var i = setInterval(function() {
-          $(".loading-page .counter h1").html(c);
-          $(".loading-page").css("width",c + "%");
-          counter++;
-          c++;
-          if (counter == 100) {
-            clearInterval(i);
-          }
-        }, 30); //loading speed
-      });
-    </script> -->
     <style>
       body {
         overflow: hidden;
@@ -84,18 +62,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     </ul>
   </div>
 </nav>
-<div class="container">
-	<div class="jumbotron welcome">
-		<h1>HOVr App</h1>
-    <h1>KENT DISTRICT LIBRARY CATALOG REDESIGN</h1>
-	</div>
-</div>
-<div class="container">
-<img src="HOVR.png" class="img-responsive zoomable" on-click="zoom:in" data-zoom-size="3240x2160"/>
+<div class="container" id="hovrBox">
 
+		<h1 id="hovrHeader">HOVr App</h1>
+	<img src="HOVR.png" class="img-responsive zoomable" on-click="zoom:in" data-zoom-size="3240x2160"/>
 </div>
 
 
+<div class="container" id="kdlBox">
+<h1 id="kdlHeader">KENT DISTRICT LIBRARY CATALOG REDESIGN</h1>
+</div>
 
 
 
@@ -107,24 +83,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
-<footer class="content">
-  <div class="footerContent">
+<footer id="foot">
     
-    <div class="cell footerBlurb">
-      © 2019
-    </div>  
-   <!-- <div class="cell branding">
-      <carbon-branding>
-<a href="https://carbonmade.com/?campaign=footer-branding" target="_blank">
-<span>Made with</span>
-<carbon-glyph>&#xe607;</carbon-glyph>
-<span>Carbonmade</span>
-</a>
-</carbon-branding>
-
-    </div> -->
-
-  </div>
+     <p> © 2019</p>
+   
 </footer>
   </div>
 </div>
