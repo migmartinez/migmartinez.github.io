@@ -228,7 +228,7 @@ h2 {
 
 }
 #foot {
-	position: absolute;
+	position: fixed;
 	bottom: 1px;
 	color: white;
 	text-align: center;
