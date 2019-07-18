@@ -84,8 +84,8 @@ color: white;
 
 @keyframes draw {
   0% {
-    stroke-dasharray: 500 500;
-    stroke-dashoffset: -474;
+    stroke-dasharray: 500 400;
+    stroke-dashoffset: -450;
     stroke-width: 8px;
   }
   100% {
@@ -93,11 +93,19 @@ color: white;
     stroke-dashoffset: 0;
     stroke-width: 2px;
   }
+
+  50% {
+  	 stroke-dasharray: 500;
+    stroke-dashoffset: 300;
+    stroke-width: 5px;
+  }
 }
 
-.svg-wrapper:hover .shape {
-  -webkit-animation: 0.5s draw linear forwards;
-  animation: 0.5s draw linear forwards;
+body:hover .shape {
+  -webkit-animation: 20s draw both;
+  animation: 20s draw both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 
