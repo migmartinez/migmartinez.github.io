@@ -265,6 +265,7 @@ h2 {
 .container {
 	line-height: 1px;
 	display: block;
+	overflow: scroll;
 
 }
 #foot {
