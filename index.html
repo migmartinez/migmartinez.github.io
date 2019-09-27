@@ -14,6 +14,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	</head>
+  
 	<body class="desktop">
     <!--<div class="loading-page">
       <div class="counter">
@@ -37,9 +38,29 @@
         }, 30); //loading speed
       });
     </script> -->
+<script>
+  var moveForce = 30; // max popup movement in pixels
+var rotateForce = 20; // max popup rotation in deg
+
+$(document).mousemove(function(e) {
+    var docX = $(document).width();
+    var docY = $(document).height();
+    
+    var moveX = (e.pageX - docX/2) / (docX/2) * -moveForce;
+    var moveY = (e.pageY - docY/2) / (docY/2) * -moveForce;
+    
+    var rotateY = (e.pageX / docX * rotateForce*2) - rotateForce;
+    var rotateX = -((e.pageY / docY * rotateForce*2) - rotateForce);
+    
+    $('.popup')
+        .css('left', moveX+'px')
+        .css('top', moveY+'px')
+        .css('transform', 'rotateX('+rotateX+'deg) rotateY('+rotateY+'deg)');
+});
+</script>
     <style>
       body {
-        overflow: hidden;
+        overflow: scroll;
         padding: 0;
         width: 100vw;
         height: 100vh;
@@ -57,6 +78,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       </g>
     </svg>
   </span>
+  <h1 id="title">
+
+
 
   <div class="navList">
     <ul class="navListInner">
@@ -90,10 +114,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       <svg height="300px" width="100%" xmlns="http://www.w3.org/2000/svg">
         <rect class="shape" height="300px" width="100%" />
       </svg>
-      <div class="text">
+      <div class="text moving-zone">
+        <div class="popup">
+          <div class="popup-content">
+            <div class="popup-text">
         <h1 id="welcome">MIGUEL MARTINEZ</h1>
         <h2 id="subWelcome">UX/UI DEVELOPER AND DESIGNER</h2>
     </div>
+  </div>
+</div>
+</div>
     <div class="btn-group">
   <a href="work.html" class="btn btn-primary">My Work</a>
   <a href="contact.html" class="btn btn-default">Contact Me</a>

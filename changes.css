@@ -20,7 +20,6 @@ html {
 	align-items: center;
 	justify-content: center;
 	top: -8vh;
-
 }
 
 .btn {
@@ -46,10 +45,12 @@ html {
 #welcome {
 	margin-right: 2%;
 	font-family: CodeBold;
+	color: white !important;
 }
 
 #subWelcome {
-	font-family: CodeLight;
+	font-family: CodeBold;
+	color: white !important;
 }
 
 .welcome {
@@ -58,7 +59,7 @@ html {
 	margin-left: 18%;
 	margin-right: 18%;
 	font-family: CodeLight;
-	color: white;
+	color: white !important;
 }
 
 .navItem {
@@ -133,7 +134,7 @@ overflow: auto;
 	color: white;
 	font-family: CodeBold;
 	text-align: center;
-	font-size: 80px;
+	font-size: 3em;
 }
 
 #hovrBox {
@@ -152,7 +153,7 @@ overflow: auto;
 	color: white;
 	font-family: CodeBold;
 	text-align: center;
-	font-size: 80px;
+	font-size: 3em;
 }
 
 #kdlBox {
@@ -161,6 +162,27 @@ overflow: auto;
 	
 	height: 100vh;
 }
+
+.bigpage {
+	margin: 15px;
+	padding: 15px;
+}
+
+#contactEmail {
+	font-size: 5em;	
+	word-wrap: break-word;
+	margin: 4px;
+	padding: 4px;
+}
+
+#contactPhone {
+	font-size: 4em;
+	word-wrap: break-word;
+	margin: 4px;
+	padding: 4px;
+	
+}
+
 
 @keyframes draw {
   0% {
@@ -219,14 +241,14 @@ h2 {
 
 @media only screen and (max-width: 1424px) {
   #contactEmail {
-	font-size: 5vw;	
+	font-size: 5em;	
 	word-wrap: break-word;
 	margin: 4px;
 	padding: 4px;
 }
 
 #contactPhone {
-	font-size: 4.5vw;
+	font-size: 4.5em;
 	word-wrap: break-word;
 	margin: 4px;
 	padding: 4px;
@@ -235,14 +257,14 @@ h2 {
 }
 
 #contactEmail {
-	font-size: 2vw;	
+	font-size: 2em;	
 	word-wrap: break-word;
 	margin: 8px;
 	padding: 8px;
 }
 
 #contactPhone {
-	font-size: 1vw;
+	font-size: 1em;
 	word-wrap: break-word;
 	margin: 8px;
 	padding: 8px;
