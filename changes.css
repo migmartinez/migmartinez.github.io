@@ -183,6 +183,24 @@ overflow: auto;
 	
 }
 
+#backendHeader {
+	color: white;
+	font-family: CodeBold;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#backendHeader a{
+	color: lightblue;
+	font-family: CodeBold;
+	text-decoration: underline;
+}
+
+#backBox {
+	position: relative;
+	top: 15vh;
+	height: 10vh;
+}
 
 @keyframes draw {
   0% {
