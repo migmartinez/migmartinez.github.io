@@ -313,7 +313,7 @@ h2 {
 
 }
 #foot {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	color: white;
 	text-align: center;
